@@ -27,10 +27,13 @@ declare const xoSettings: {
         } | {
             selector: string;
             modifiers: string[];
-            format?: undefined;
-            leadingUnderscore?: undefined;
-            trailingUnderscore?: undefined;
-            filter?: undefined;
+            format: string[];
+            leadingUnderscore: string;
+            trailingUnderscore: string;
+            filter: {
+                regex: string;
+                match: boolean;
+            };
             types?: undefined;
             prefix?: undefined;
         } | {

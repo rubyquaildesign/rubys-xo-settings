@@ -27,7 +27,18 @@ const rules: Linter.RulesRecord & Partial<ESLintRules> = {
 			selector: 'typeLike',
 			format: ['PascalCase'],
 		},
-		{ selector: 'variable', modifiers: ['const'] },
+		{
+			selector: 'variable',
+			modifiers: ['const'],
+			format: ['camelCase','SNAKE_CASE'],
+			leadingUnderscore: 'allowSingleOrDouble',
+			trailingUnderscore: 'allow',
+			// Ignore `{'Retry-After': retryAfter}` type properties.
+			filter: {
+				regex: '[- ]',
+				match: false,
+			},
+		},
 		{
 			selector: 'variable',
 			types: ['boolean'],
