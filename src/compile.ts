@@ -30,7 +30,7 @@ const rules: Linter.RulesRecord & Partial<ESLintRules> = {
 		{
 			selector: 'variable',
 			modifiers: ['const'],
-			format: ['camelCase','SNAKE_CASE'],
+			format: ['camelCase','UPPER_CASE'],
 			leadingUnderscore: 'allowSingleOrDouble',
 			trailingUnderscore: 'allow',
 			// Ignore `{'Retry-After': retryAfter}` type properties.
