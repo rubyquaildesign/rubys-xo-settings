@@ -14,8 +14,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build:compileJSON": "ts-node src/compile.ts",
-		"build": "pnpm run build:compileJSON && tsup",
-		"prepare": "ts-node src/compile.ts && tsup"
+		"build": "pnpm run build:compileJSON && tsup"
 	},
 	"keywords": [],
 	"files": [
