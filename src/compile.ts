@@ -73,9 +73,20 @@ const rules: Linter.RulesRecord & Partial<ESLintRules> = {
 	'@typescript-eslint/restrict-template-expressions': 'off',
 	'@typescript-eslint/unified-signatures': 'off',
 	'@typescript-eslint/no-unused-vars': 'off',
+	'@typescript-eslint/no-unsafe-assignment': 'off',
+	'@typescript-eslint/no-unsafe-call': 'off',
+	'@typescript-eslint/no-unsafe-return': 'off',
+	'@typescript-eslint/ban-ts-comment':'off',
+	'@typescript-eslint/prefer-for-of':'off',
 	'unicorn/prefer-node-protocol': 'off',
 	'unicorn/no-array-reduce': 'off',
+	'unicorn/no-array-for-each': 'off',
+	'unicorn/no-await-expression-member':'off',
 	'import/extensions': 'off',
+	'no-await-in-loop': 'off',
+	'complexity': 'off',
+	'default-case': 'off',
+	"max-params":['warn',{max:8}]
 };
 const opts: x.Options = {
 	prettier: true,
