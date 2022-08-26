@@ -88,6 +88,7 @@ declare const xoSettings: {
         "no-await-in-loop": string;
         complexity: string;
         "default-case": string;
+        "unicorn/filename-case": string;
         "max-params": (string | {
             max: number;
         })[];

@@ -86,6 +86,7 @@ const rules: Linter.RulesRecord & Partial<ESLintRules> = {
 	'no-await-in-loop': 'off',
 	'complexity': 'off',
 	'default-case': 'off',
+	'unicorn/filename-case':'off',
 	"max-params":['warn',{max:8}]
 };
 const opts: x.Options = {
