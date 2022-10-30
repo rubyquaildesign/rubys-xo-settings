@@ -13,7 +13,7 @@ const rules: Linter.RulesRecord & Partial<ESLintRules> = {
 			// Note: Leaving out `parameter` and `typeProperty` because of the mentioned known issues.
 			// Note: We are intentionally leaving out `enumMember` as it's usually pascal-case or upper-snake-case.
 			selector: 'default',
-			format: ['camelCase'],
+			format: ["camelCase","UPPER_CASE"],
 			// We allow double underscore because of GraphQL type names and some React names.
 			leadingUnderscore: 'allowSingleOrDouble',
 			trailingUnderscore: 'allow',
